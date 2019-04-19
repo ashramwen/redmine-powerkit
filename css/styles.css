@@ -1,0 +1,44 @@
+.issue-card.bk-red {
+  background-color: #ffe2e3;
+  border-color: #ffc9c9;
+}
+
+.issue-card.bk-green {
+  background-color: #dfffcc;
+  border-color: #beefbe;
+}
+
+.issue-card.bk-blue {
+  background-color: #dce7ff;
+  border-color: #bdbde9;
+}
+
+.issue-card.bk-turquoise {
+  background-color: #c4fdff;
+  border-color: #97ded6;
+}
+
+.issue-card.bk-lightgreen {
+  background-color: #d2ffef;
+  border-color: #b8e4e2;
+}
+
+.issue-card.bk-yellow {
+  background-color: #fffd9c;
+  border-color: #eaea5e;
+}
+
+.issue-card.bk-orange {
+  background-color: #ffdbba;
+  border-color: #ffca69;
+}
+
+.issue-card.bk-purple {
+  background-color: #efdffc;
+  border-color: #e9bae9;
+}
+
+.issue-card.bk-gray {
+  background-color: #e1e1e1;
+  border-color: #c6c6c6;
+}

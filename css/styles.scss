@@ -1,0 +1,38 @@
+.issue-card {
+  &.bk-red {
+    background-color: #ffe2e3;
+    border-color: rgb(255, 201, 201);
+  }
+  &.bk-green {
+    background-color: #dfffcc;
+    border-color: rgb(190, 239, 190);
+  }
+  &.bk-blue {
+    background-color: #dce7ff;
+    border-color: rgb(189, 189, 233);
+  }
+  &.bk-turquoise {
+    background-color: #c4fdff;
+    border-color: rgb(151, 222, 214);
+  }
+  &.bk-lightgreen {
+    background-color: #d2ffef;
+    border-color: rgb(184, 228, 226);
+  }
+  &.bk-yellow {
+    background-color: #fffd9c;
+    border-color: rgb(234, 234, 94);
+  }
+  &.bk-orange {
+    background-color: #ffdbba;
+    border-color: rgb(255, 202, 105);
+  }
+  &.bk-purple {
+    background-color: #efdffc;
+    border-color: rgb(233, 186, 233);
+  }
+  &.bk-gray {
+    background-color: #e1e1e1;
+    border-color: rgb(198, 198, 198);
+  }
+}
