@@ -6,7 +6,7 @@
   "version": "1.0.0",
   "permissions": ["activeTab", "https://redmine.lftech.com.tw/*"],
   "browser_action": {
-    "default_icon": "img/icon.png"
+    "default_icon": "icon.png"
   },
   "icons": {
     "16": "img/icon16.png",
