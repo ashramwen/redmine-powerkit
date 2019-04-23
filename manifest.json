@@ -3,7 +3,7 @@
   "name": "Redmine Powerkit",
   "description": "A Redmine powerkit for internal using",
   "author": "Augustine Wen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "permissions": ["activeTab", "https://redmine.lftech.com.tw/*"],
   "browser_action": {
     "default_icon": "icon.png"
