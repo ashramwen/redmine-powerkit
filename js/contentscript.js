@@ -1,17 +1,44 @@
 const Tracker = {
   'iNum-Story': 'bk-blue',
+  'iNum-Task': 'is-task',
   'iNum-Bug': 'bk-red',
 
   'OPT-Story': 'bk-blue',
+  // 'OPT-Task': 'is-task',
   'OPT-Bug': 'bk-red'
 };
 
+const Name = {
+  Web: ['[Web]', '【WEB】'],
+  BO: ['[BO]', '【BO】']
+};
+
 const changeColor = () => {
-  $('.issue-id > strong').each((i, e) => {
-    const text = e.innerText.split(' #')[0];
-    $(e)
-      .closest('.issue-card')
-      .addClass(Tracker[text]);
+  $('.issue-card').each((i, card) => {
+    const tracker = $(card)
+      .find('.issue-id > strong')
+      .text()
+      .split(' #')[0];
+    $(card).addClass(Tracker[tracker]);
+
+    const name = $(card)
+      .find('.name')
+      .text();
+
+    if ($(card).hasClass('is-task')) {
+      Name.Web.forEach(o => {
+        if (name.indexOf(o) > -1) {
+          $(card).addClass('br-turquoise');
+          return;
+        }
+      });
+      Name.BO.forEach(o => {
+        if (name.indexOf(o) > -1) {
+          $(card).addClass('br-gray');
+          return;
+        }
+      });
+    }
   });
 };
 changeColor();
