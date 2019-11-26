@@ -1,5 +1,5 @@
 {
-  "version": "1.0.3",
+  "version": "1.0.4",
   "manifest_version": 2,
   "name": "Redmine Powerkit",
   "description": "A Redmine powerkit for internal using",
@@ -24,7 +24,8 @@
       "js": [
         "js/jquery-3.4.0.slim.min.js",
         "js/fullscreen.js",
-        "js/contentscript.js"
+        "js/contentscript.js",
+        "js/newissue.js"
       ]
     }
   ]
