@@ -1,11 +1,10 @@
 {
-  "version": "1.0.6",
+  "version": "1.0.7",
   "manifest_version": 2,
   "name": "Redmine Powerkit",
   "description": "A Redmine powerkit for internal using",
   "author": "Augustine Wen",
   "permissions": [
-    "*://redmine.lftech.com.tw/*",
     "*://redmine.yjtech.tw/*",
     "webRequest",
     "activeTab"
@@ -24,7 +23,6 @@
   "content_scripts": [
     {
       "matches": [
-        "https://redmine.lftech.com.tw/*",
         "https://redmine.yjtech.tw/*"
       ],
       "include_globs": ["*/agile/board?*"],
@@ -37,7 +35,6 @@
     },
     {
       "matches": [
-        "https://redmine.lftech.com.tw/*",
         "https://redmine.yjtech.tw/*"
       ],
       "include_globs": ["*/issues/new"],

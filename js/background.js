@@ -1,5 +1,5 @@
 const networkFilters = {
-  urls: ['*://redmine.lftech.com.tw/agile/board*']
+  urls: ['*://redmine.yjtech.tw/agile/board*']
 };
 chrome.webRequest.onResponseStarted.addListener(
   () =>
