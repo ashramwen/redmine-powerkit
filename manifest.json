@@ -1,14 +1,10 @@
 {
-  "version": "1.0.7",
+  "version": "1.0.8",
   "manifest_version": 2,
   "name": "Redmine Powerkit",
   "description": "A Redmine powerkit for internal using",
   "author": "Augustine Wen",
-  "permissions": [
-    "*://redmine.yjtech.tw/*",
-    "webRequest",
-    "activeTab"
-  ],
+  "permissions": ["*://redmine.yjtech.tw/*", "webRequest", "activeTab"],
   "browser_action": {
     "default_icon": "icon.png"
   },
@@ -22,10 +18,8 @@
   },
   "content_scripts": [
     {
-      "matches": [
-        "https://redmine.yjtech.tw/*"
-      ],
-      "include_globs": ["*/agile/board?*"],
+      "matches": ["https://redmine.yjtech.tw/*"],
+      "include_globs": ["*/agile/board?*", "*/issues?*"],
       "css": ["css/styles.css"],
       "js": [
         "js/jquery-3.4.0.slim.min.js",
@@ -34,10 +28,8 @@
       ]
     },
     {
-      "matches": [
-        "https://redmine.yjtech.tw/*"
-      ],
-      "include_globs": ["*/issues/new"],
+      "matches": ["https://redmine.yjtech.tw/*"],
+      "include_globs": ["*/issues/new?*"],
       "js": ["js/jquery-3.4.0.slim.min.js", "js/newissue.js"]
     }
   ]

@@ -5,7 +5,9 @@ const Tracker = {
 
   'OPT-Story': 'bk-blue',
   // 'OPT-Task': 'is-task',
-  'OPT-Bug': 'bk-red'
+  'OPT-Bug': 'bk-red',
+
+  Requirements: 'bk-orange br-orange'
 };
 
 const Name = {
@@ -25,20 +27,20 @@ const changeColor = () => {
       .find('.name')
       .text();
 
-    if ($(card).hasClass('is-task')) {
-      Name.Web.forEach(o => {
-        if (name.indexOf(o) > -1) {
-          $(card).addClass('br-turquoise');
-          return;
-        }
-      });
-      Name.BO.forEach(o => {
-        if (name.indexOf(o) > -1) {
-          $(card).addClass('br-gray');
-          return;
-        }
-      });
-    }
+    // if ($(card).hasClass('is-task')) {
+    //   Name.Web.forEach(o => {
+    //     if (name.indexOf(o) > -1) {
+    //       $(card).addClass('br-turquoise');
+    //       return;
+    //     }
+    //   });
+    //   Name.BO.forEach(o => {
+    //     if (name.indexOf(o) > -1) {
+    //       $(card).addClass('br-gray');
+    //       return;
+    //     }
+    //   });
+    // }
   });
 };
 changeColor();
