@@ -1,9 +1,9 @@
-(function() {
+(function () {
   if (!$('#content').has('.contextual').length) {
     $('#content').prepend('<div class="contextual"></div>');
   }
 
-  $('.contextual').prepend(
+  $('#content > .contextual').eq(0).prepend(
     '<a class="icon icon-fullscreen" href="javascript:void(0)">Full screen</a>'
     // '<a href="#" onclick="$(&quot;html&quot;).toggleClass(&quot;agile-board-fullscreen&quot;); saveFullScreenState(); return false;" class="icon icon-fullscreen">Full screen</a>'
   );
