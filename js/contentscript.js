@@ -7,25 +7,24 @@ const Tracker = {
   // 'OPT-Task': 'is-task',
   'OPT-Bug': 'bk-red',
 
-  Requirements: 'bk-orange br-orange'
+  Requirements: 'bk-orange br-orange',
 };
 
 const Name = {
   Web: ['[Web]', '【WEB】'],
-  BO: ['[BO]', '【BO】']
+  BO: ['[BO]', '【BO】'],
 };
 
 const changeColor = () => {
   $('.issue-card').each((i, card) => {
-    const tracker = $(card)
-      .find('.issue-id > strong')
-      .text()
-      .split(' #')[0];
+    const tracker = $(card).find('.issue-id > strong').text().split(' #')[0];
     $(card).addClass(Tracker[tracker]);
 
-    const name = $(card)
-      .find('.name')
-      .text();
+    const name = $(card).find('.name').text();
+
+    if (name.includes('[iNL]')) {
+      $(card).addClass('br-blue');
+    }
 
     // if ($(card).hasClass('is-task')) {
     //   Name.Web.forEach(o => {
